@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Register New Volunteer</title>
+</head>
+<body>
+  <header>
+    <h1>Volunteer Registration System</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register New Volunteer</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Register New Volunteer</h2>
+    <form action="/register" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Phone:</label>
+      <input type="text" name="phone" required>
+      <label>Skills:</label>
+      <input type="text" name="skills" required>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+</body>
+</html>

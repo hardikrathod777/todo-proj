@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Edit Volunteer</title>
+</head>
+<body>
+  <header>
+    <h1>Volunteer Registration System</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register New Volunteer</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Edit Volunteer</h2>
+    <form action="/edit/<%= volunteer.id %>" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" value="<%= volunteer.name %>" required>
+      <label>Email:</label>
+      <input type="email" name="email" value="<%= volunteer.email %>" required>
+      <label>Phone:</label>
+      <input type="text" name="phone" value="<%= volunteer.phone %>" required>
+      <label>Skills:</label>
+      <input type="text" name="skills" value="<%= volunteer.skills %>" required>
+      <button type="submit">Update</button>
+    </form>
+  </main>
+</body>
+</html>
